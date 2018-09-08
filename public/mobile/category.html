@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>传智云商-分类</title>
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/category.css">
+</head>
+<body>
+<div class="lt_container">
+    <header class="lt_header">
+        <a href="javascript:history.back();" class="left"><span class="fa fa-chevron-left"></span></a>
+        <h3>商品分类</h3>
+        <a href="search.html" class="right"><span class="fa fa-search"></span></a>
+    </header>
+    <div class="lt_content">
+        <div class="lt_wrapper">
+            <!--左侧-->
+            <aside class="lt_cateLeft">
+                <!--TODO render-->
+            </aside>
+            <!--右侧-->
+            <article  class="lt_cateRight">
+                <!--TODO render-->
+            </article>
+        </div>
+    </div>
+    <footer class="lt_tabs">
+        <a href="index.html"><span class="fa fa-home"></span><p>首页</p></a>
+        <a class="now" href="category.html"><span class="fa fa-bars"></span><p>分类</p></a>
+        <a href="user/cart.html"><span class="fa fa-shopping-cart"></span><p>购物车</p></a>
+        <a href="user/index.html"><span class="fa fa-user"></span><p>个人中心</p></a>
+    </footer>
+</div>
+<script type="text/template" id="top">
+    <ul>
+        {{each rows}}
+        <li class="{{$index===0?'now':''}}"><a data-id="{{$value.id}}" href="javascript:;">{{$value.categoryName}}</a></li>
+        {{/each}}
+    </ul>
+</script>
+<script type="text/template" id="second">
+    <ul>
+        {{if rows.length}}
+            {{each rows}}
+            <li><a href="#"><img src="{{$value.brandLogo}}" alt=""><p>{{$value.brandName}}</p></a></li>
+            {{/each}}
+        {{else}}
+            <li class="nd">没有分类数据。</li>
+        {{/if}}
+    </ul>
+</script>
+<script src="assets/mui/js/mui.min.js"></script>
+<script src="assets/zepto/zepto.min.js"></script>
+<script src="assets/artTemplate/template-web.js"></script>
+<script src="js/mobile.js"></script>
+<script src="js/category.js"></script>
+</body>
+</html>

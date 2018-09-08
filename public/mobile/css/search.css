@@ -1,0 +1,44 @@
+.lt_history{
+    padding: 0 10px;
+}
+.lt_history .tit{
+    font-size: 12px;
+    position: relative;
+}
+.lt_history .tit > span{
+    color: #666;
+}
+.lt_history .tit > a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #666;
+}
+.lt_history .con{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px dashed #ccc;
+    border-bottom: none;
+}
+.lt_history .con li{
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dashed #ccc;
+    padding: 0 10px;
+    position: relative;
+}
+.lt_history .con li a{
+    font-size: 12px;
+}
+.lt_history .con li span{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #666;
+}

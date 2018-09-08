@@ -1,0 +1,100 @@
+[class^="pro_"]{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.pro_name p{
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #333;
+}
+.pro_price .now{
+    font-size: 20px;
+    color: red;
+}
+.pro_price .old{
+    font-size: 12px;
+    color: #666;
+    text-decoration: line-through;
+}
+.pro_size span{
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    line-height: 32px;
+}
+.pro_size span.now{
+    background: #fa0;
+}
+.pro_num{
+    vertical-align: middle;
+}
+.pro_num .num{
+    width: 92px;
+    height: 32px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: middle;
+}
+.pro_num .num span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    float: left;
+}
+.pro_num .num input{
+    border: none;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+}
+.pro_num .sy{
+    font-size: 14px;
+}
+
+/*操作按钮区域*/
+.lt_btn{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 55px;
+    width: 100%;
+    line-height: 55px;
+    border-top: 1px solid #ccc;
+    background: #f3f4f5;
+}
+.lt_btn .btn_cart{
+    width: 55px;
+    height: 54px;
+    text-align: center;
+    float: left;
+    color: #333;
+}
+.lt_btn .btn_box{
+    overflow: hidden;
+    padding-right: 10px;
+}
+.lt_btn .btn_box a{
+    width: 48%;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    float: left;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+.lt_btn .btn_box a.addCart{
+    margin-right: 4%;
+    background: #991020;
+}
+.lt_btn .btn_box a.pay{
+    background: #fa672d;
+}
